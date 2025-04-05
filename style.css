@@ -1,0 +1,70 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(to bottom right, #375377, #e6db66);
+    text-align: center;
+    padding: 40px 0;
+    margin: 0;
+    
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 15px;
+    justify-content: center;
+    margin: 0 auto 20px;
+  }
+  
+  .card {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.4s ease, background-color 0.4s ease;
+  }
+  
+  .card.flipped {
+    background-color: #f0fdf4;
+    transform: rotateY(180deg);
+  }
+  
+  .card.matched {
+    background-color: #bbf7d0;
+    box-shadow: 0 0 10px 4px #4ade80;
+    pointer-events: none;
+  }
+  
+  button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background: #4f46e5;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background: #6366f1;
+  }
+  
+  #status {
+    font-size: 18px;
+    color: #111827;
+    margin-top: 10px;
+  }
+  
